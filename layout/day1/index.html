@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="all.css" class="css">
+</head>
+<body>
+    <!-- HTML 程式碼 -->
+
+<p class="green yellow orange">
+我是P段落，文字顏色是什麼呢?區塊元素還是行內元素呢?
+</p> 
+
+<span class="red yellow green">
+我是span，文字顏色是什麼呢?區塊元素還是行內元素呢?
+</span>
+
+<div class="blue orange red">
+我是div，文字顏色是什麼呢?區塊元素還是行內元素呢?
+</div>
+red段落 -> red 區塊元素
+<a class="yellow blue green">
+我是a連結，文字顏色是什麼呢?區塊元素還是行內元素呢?
+</a>
+
+> []
+<img src="..." alt="img">
+我是img，區塊元素還是行內元素呢?
+
+
+
+<h3>
+ANS
+</h3>
+<p>
+    P段落 -> green 區塊元素<br>
+    span段落 -> green 行內元素<br>
+    a連結 -> green 行內元素<br>
+    img -> 行內元素
+</p>
+
+<ul>
+    <li>ANS</li>
+    <ul>
+        <li>
+            P段落 -> green 區塊元素
+        </li>
+            <li>
+             span段落 -> green 行內元素
+        </li>
+            <li>
+            a連結 -> green 行內元素
+        </li>
+            <li>
+            P段落 -> green 區塊元素
+        </li>
+    </ul>
+
+        <li>總結</li>  
+    <ul>
+        <li>
+            覆蓋順序是由 CSS 中的規則寫作順序決定的，而不是 HTML 中 class 的排列順序。
+        </li>
+        <li>
+             最後定義的 CSS 規則會覆蓋之前的相同屬性設置。
+        </li>
+            <li>
+            a連結 -> green 行內元素
+        </li>
+            <li>
+            P段落 -> green 區塊元素
+        </li>
+    </ul>
+</ul>
+
+
+</body>
+</html>
